@@ -2,7 +2,7 @@
 const inicioPreguntas = require('./modulos/preguntas/preguntasGeneral');
 const generarEscrito = require('./modulos/plantilla');
 
-async function excutionCostas() {
+function excutionCostas() {
 
     console.log('\n======================= Calculadora de Minutas =============================\n');
     console.log('Esta aplicación realiza un cálculo estrictamente sobre los criterios ');
@@ -16,7 +16,7 @@ async function excutionCostas() {
     console.log('actualizarse de forma manual.\n');
     console.log('Pruebe a ejecutar de nuevo la aplicación en esos casos. \n\n');
 
-    await inicioPreguntas().then((result) => {
+    inicioPreguntas().then((result) => {
 
         generarEscrito(result);
         

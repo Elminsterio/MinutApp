@@ -39,8 +39,8 @@ async function preguntasCivil() {
     console.log('(4) Recurso de Apelación');                 
     console.log('(5) Recurso extraordinario de infracción procesal');
     console.log('(6) Recurso de casación');
-    console.log('(7) Ejecución dineraria');
-    console.log('(8) Incidentes y reclamación de honorarios');
+    console.log('(7) Incidentes y reclamación de honorarios');
+    console.log('(8) Ejecución dineraria');
 
     let liquidacion = {};
     let inadmitido;
@@ -155,10 +155,10 @@ async function preguntasCivil() {
 
             console.log('Por favor, indica el criterio concreto:\n');
 
-            console.log('Criterio 15.a).1');                 
-            console.log('Criterio 15.a).2');                 
-            console.log('Criterio 15.a).3'); 
-            console.log('Criterio 15.a).4');                 
+            console.log('Criterio 15.a).1 - Si el demandado no se opone, realizando la consignación de las cantidades reclamadas en los días previos al vencimiento del plazo para oponerse');                 
+            console.log('Criterio 15.a).2 - Si el demandado no se opone, pero continúa la ejecución, iniciándose la vía de apremio, y procediendo a la averiguación de bienes, embargo, pero sin llegar al avalúo y subasta de aquéllos');                 
+            console.log('Criterio 15.a).3 - Si el ejecutado se opone y se estima su oposición, o bien si se desestima pero hubiere consignación'); 
+            console.log('Criterio 15.a).4 -  Si la ejecución se tramita en su integridad');                 
 
             numero = await auxiliarPreguntas.ejecutorPregunta('\n', 'Por favor, selecciona el criterio dentro del rango especificado.', 'seleccion', 4);
 
